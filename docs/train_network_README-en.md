@@ -124,7 +124,7 @@ Both DyLoRA-LierLa and DyLoRA-C3Lier can be learned.
 
 ### Learning with DyLoRA
 
-Specify `network.dylora` for the `--network_module` option, which is compatible with DyLoRA.
+Specify `networks.dylora` for the `--network_module` option, which is compatible with DyLoRA.
 
 Also, specify `unit` in `--network_args`, such as `--network_args "unit=4"`. `unit` is the unit for dividing rank. For example, specify `--network_dim=16 --network_args "unit=4"`. Please make sure that `unit` is a divisor of `network_dim` (i.e., `network_dim` is a multiple of `unit`).
 
